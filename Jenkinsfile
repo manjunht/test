@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..new'
+                sudo apt-get update
+                sudo apt-get install docker.io
             }
         }
         stage('Test') {
