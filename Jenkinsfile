@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'apt list'
+                sh 'apt-get update'
             }
         }
         stage('Test') {
