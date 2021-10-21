@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                apt-get update
-                apt-get install docker.io
+                apt-get 'update'
             }
         }
         stage('Test') {
